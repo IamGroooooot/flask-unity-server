@@ -17,9 +17,9 @@
         </form>
         <br>
         <br>
-        {{ post_result }}
+        <div>받은 메시지: </div> {{ post_result }}
 
-        <h1>Get Test</h1>
+        <h2>Get Test</h2>
         <!-- Main Input For Receiving Query to our ML -->
         <form action="{{ url_for('get')}}" method="GET">
             <input type="text" name="msg" required="required" />
@@ -27,7 +27,7 @@
         </form>
         <br>
         <br>
-        {{ get_result }}
+        <div>받은 메시지: </div> {{ get_result }}
     </div>
 </body>
 
