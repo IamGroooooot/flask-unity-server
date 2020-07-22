@@ -10,7 +10,7 @@ def home():
 
 @app.route("/post", methods=["POST"])
 def post():
-    msg = list(request.form["msg"])
+    msg = request.form["msg"]
     print("===Post Request===")
     print(msg)
     print()
